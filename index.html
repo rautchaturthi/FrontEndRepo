@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unpolished Engineer</title>
+
+
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+
+
+</head>
+
+<body>
+
+
+<!-- Header -->
+<header class="header">
+    <h1>Unpolished Engineer</h1>
+    <p>From Unpolished to Placement Ready</p>
+</header>
+
+<main class="container">
+
+    <!-- Dashboard -->
+    <section class="dashboard">
+
+        <div class="card">
+            <h3>Total Applications</h3>
+            <p id="total-applications">0</p>
+        </div>
+
+        <div class="card">
+            <h3>OA Cleared</h3>
+            <p id="oa-cleared">0</p>
+        </div>
+
+        <div class="card">
+            <h3>Interviews</h3>
+            <p id="interviews">0</p>
+        </div>
+
+        <div class="card">
+            <h3>Selected</h3>
+            <p id="selected">0</p>
+        </div>
+
+    </section>
+
+    <!-- Add Application Form -->
+    <section class="form-section">
+
+        <h2>Add New Application</h2>
+
+        <form id="application-form">
+
+            <div class="form-group">
+                <label for="company-name">Company Name</label>
+                <input
+                    type="text"
+                    id="company-name"
+                    placeholder="Enter company name"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label for="role">Role</label>
+                <input
+                    type="text"
+                    id="role"
+                    placeholder="Enter role"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label for="package">Package (LPA)</label>
+                <input
+                    type="number"
+                    id="package"
+                    placeholder="Enter package"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label for="application-date">Application Date</label>
+                <input
+                    type="date"
+                    id="application-date"
+                    required>
+            </div> 
+
+            <div class="form-group">
+                <label for="status">Status</label>
+
+                <select id="status" required>
+                    <option value="Applied">Applied</option>
+                    <option value="OA Cleared">OA Cleared</option>
+                    <option value="Interview">Interview</option>
+                    <option value="Selected">Selected</option>
+                    <option value="Rejected">Rejected</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="notes">Notes</label>
+                <textarea
+                    id="notes"
+                    rows="4"
+                    placeholder="Write notes about OA, interview, preparation, etc."
+                    ></textarea>
+            </div>
+            <button type="submit" class="btn">
+                Add Application
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- Search & Filter -->
+    <section class="search-filter">
+
+        <input
+            type="text"
+            id="search-company"
+            placeholder="Search company...">
+
+        <select id="filter-status">
+            <option value="All">All Status</option>
+            <option value="Applied">Applied</option>
+            <option value="OA Cleared">OA Cleared</option>
+            <option value="Interview">Interview</option>
+            <option value="Selected">Selected</option>
+            <option value="Rejected">Rejected</option>
+        </select>
+
+    </section>
+
+    <!-- Applications -->
+    <section class="applications-section">
+
+        <h2>Your Applications</h2>
+
+        <div id="applications-container">
+
+            <div class="empty-state">
+                <h3>No Applications Added Yet</h3>
+                <p>
+                    Start by adding your first company application.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer class="footer">
+    <p>© 2026 Unpolished Engineer. All Rights Reserved.</p>
+</footer>
+
+
+</body>
+
+</html>
